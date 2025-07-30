@@ -12,7 +12,7 @@
     <h1>Interactive Light Bulb</h1>
 
     <div id="dice-wrapper" tabindex="0">
-      <img id="myImage" src="bulboff.png" width="200" height="200">
+      <img id="myImage" src="bulboff-removebg-preview.png" width="200" height="220">
     </div>
 
     <button id="roll-btn" onclick="changeImage()">Toggle Light</button>
@@ -21,10 +21,10 @@
   <script>
   function changeImage() {
     var image = document.getElementById('myImage');
-    if (image.src.match("bulbon")) {
-        image.src = "bulboff.png";
+    if (image.src.match("bulbon-removebg-preview")) {
+        image.src = "bulboff-removebg-preview.png";
     } else {
-        image.src = "bulbon.png";
+        image.src = "bulbon-removebg-preview.png";
     }
   }
 </script>
