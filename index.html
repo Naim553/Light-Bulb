@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice Roller 2.0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Interactive Light Bulb</h1>
+
+    <div id="dice-wrapper" tabindex="0">
+      <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+    </div>
+
+    <button id="roll-btn" onclick="changeImage()">Toggle Light</button>
+  </main>
+
+  <script>
+  function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bu";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+  }
+</script>
+</body>
+</html>
